@@ -40,23 +40,30 @@
                     <img src="assets/images/logo-icon.png" alt="logo icon">
                 </div>
                 <div class="card-title text-uppercase text-center py-3">Sign In</div>
-                <form>
+                <form action="{{route('login')}}" method="post">
+                    @csrf
                     <div class="form-group">
                         <label for="exampleInputUsername" class="sr-only">Username</label>
                         <div class="position-relative has-icon-right">
-                            <input type="text" id="exampleInputUsername" class="form-control input-shadow" placeholder="Enter Username">
+                            <input name="email" type="text" id="exampleInputUsername" class="form-control input-shadow" placeholder="Enter Username">
                             <div class="form-control-position">
                                 <i class="icon-user"></i>
                             </div>
+                            @error('email')
+                            <span class="text-danger">{{$message}}</span>
+                            @enderror
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPassword" class="sr-only">Password</label>
                         <div class="position-relative has-icon-right">
-                            <input type="password" id="exampleInputPassword" class="form-control input-shadow" placeholder="Enter Password">
+                            <input name="password" type="password" id="exampleInputPassword" class="form-control input-shadow" placeholder="Enter Password">
                             <div class="form-control-position">
                                 <i class="icon-lock"></i>
                             </div>
+                            @error('password')
+                            <span class="text-danger">{{$message}}</span>
+                            @enderror
                         </div>
                     </div>
                     <div class="form-row">
@@ -70,7 +77,7 @@
                             <a href="reset-password.html">Reset Password</a>
                         </div>
                     </div>
-                    <button type="button" class="btn btn-light btn-block">Sign In</button>
+                    <button type="submit" class="btn btn-light btn-block">Sign In</button>
                     <div class="text-center mt-3">Sign In With</div>
 
                     <div class="form-row mt-4">

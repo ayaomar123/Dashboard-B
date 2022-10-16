@@ -43,7 +43,7 @@
 			  <div class="form-group">
 			  <label for="exampleInputName" class="sr-only">Name</label>
 			   <div class="position-relative has-icon-right">
-				  <input type="text" id="exampleInputName" class="form-control input-shadow" placeholder="Enter Your Name">
+				  <input name="name" type="text" id="exampleInputName" class="form-control input-shadow" placeholder="Enter Your Name">
 				  <div class="form-control-position">
 					  <i class="icon-user"></i>
 				  </div>
@@ -52,7 +52,7 @@
 			  <div class="form-group">
 			  <label for="exampleInputEmailId" class="sr-only">Email ID</label>
 			   <div class="position-relative has-icon-right">
-				  <input type="text" id="exampleInputEmailId" class="form-control input-shadow" placeholder="Enter Your Email ID">
+				  <input name="email" type="text" id="exampleInputEmailId" class="form-control input-shadow" placeholder="Enter Your Email ID">
 				  <div class="form-control-position">
 					  <i class="icon-envelope-open"></i>
 				  </div>
@@ -61,7 +61,7 @@
 			  <div class="form-group">
 			   <label for="exampleInputPassword" class="sr-only">Password</label>
 			   <div class="position-relative has-icon-right">
-				  <input type="text" id="exampleInputPassword" class="form-control input-shadow" placeholder="Choose Password">
+				  <input name="password" type="text" id="exampleInputPassword" class="form-control input-shadow" placeholder="Choose Password">
 				  <div class="form-control-position">
 					  <i class="icon-lock"></i>
 				  </div>
@@ -75,7 +75,7 @@
 			     </div>
 			    </div>
 			  
-			 <button type="button" class="btn btn-light btn-block waves-effect waves-light">Sign Up</button>
+			 <button type="submit" class="btn btn-light btn-block waves-effect waves-light">Sign Up</button>
 			  <div class="text-center mt-3">Sign Up With</div>
 			  
 			 <div class="form-row mt-4">
